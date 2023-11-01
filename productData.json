@@ -1,111 +1,111 @@
 [
     {
-        "img" : "src/assets/products/9.jpeg",
+        "img" : "/products/9.jpeg",
         "name" : "Paket 1",
         "price" : 249000,
         "categories" : "makanan",
         "description" : "Kurma Rasa Kunyit Samarinda Rasanya Assalamualaikum."
     },
     {
-        "img" : "src/assets/products/14.jpeg",
+        "img" : "/products/14.jpeg",
         "name" : "Paket 2",
         "price" : 249000,
         "categories" : "makanan",
         "description" : "Kurma Rasa Kunyit Samarinda Rasanya Assalamualaikum."
     },
     {
-        "img" : "src/assets/products/8.jpeg",
+        "img" : "/products/8.jpeg",
         "name" : "Paket 3",
         "price" : 249000,
         "categories" : "makanan",
         "description" : "Kurma Rasa Kunyit Samarinda Rasanya Assalamualaikum."
     },
     {
-        "img" : "src/assets/products/1.jpeg",
+        "img" : "/products/1.jpeg",
         "name" : "Coklat Kerikil",
         "price" : 30000,
         "categories" : "makanan",
         "description" : "Coklat Kerikil premium, renyah, dan lezat."
     },
     {
-        "img" : "src/assets/products/2.jpeg",
+        "img" : "/products/2.jpeg",
         "name" : "Coklat Kerikil",
         "price" : 30000,
         "categories" : "makanan",
         "description" : "Coklat Kerikil premium, renyah, dan lezat."
     },
     {
-        "img" : "src/assets/products/3.jpeg",
+        "img" : "/products/3.jpeg",
         "name" : "Kurma Ajwa",
         "price" : 60000,
         "categories" : "makanan",
         "description" : "Kurma Premium Ajwa 500gram."
     },
     {
-        "img" : "src/assets/products/4.jpeg",
+        "img" : "/products/4.jpeg",
         "name" : "Kurma Ajwa",
         "price" : 90000,
         "categories" : "makanan",
         "description" : "Kurma Premium Ajwa 750gram."
     },
     {
-        "img" : "src/assets/products/5.jpeg",
+        "img" : "/products/5.jpeg",
         "name" : "Kurma Ajwa",
         "price" : 120000,
         "categories" : "makanan",
         "description" : "Kurma Premium Ajwa 1kilogram."
     },
     {
-        "img" : "src/assets/products/6.jpeg",
+        "img" : "/products/6.jpeg",
         "name" : "Kacang Pistacio",
         "price" : 75000,
         "categories" : "makanan",
         "description" : "Kacang Pistasio gurih yang kaya akan nutrisi."
     },
     {
-        "img" : "src/assets/products/10.jpeg",
+        "img" : "/products/10.jpeg",
         "name" : "Kurma Sukari",
         "price" : 50000,
         "categories" : "makanan",
         "description" : "Kurma lezat dan manis Sukari, memenuhi keinginan gizi."
     },
     {
-        "img" : "src/assets/products/11.jpeg",
+        "img" : "/products/11.jpeg",
         "name" : "Kurma Arab",
         "price" : 249000,
         "categories" : "makanan",
         "description" : "Kurma Rasa Kunyit Samarinda Rasanya Assalamualaikum."
     },
     {
-        "img" : "src/assets/products/12.jpeg",
+        "img" : "/products/12.jpeg",
         "name" : "Kurma Sukari",
         "price" : 50000,
         "categories" : "makanan",
         "description" : "Kurma lezat dan manis Sukari, memenuhi keinginan gizi."
     },
     {
-        "img" : "src/assets/products/15.jpeg",
+        "img" : "/products/15.jpeg",
         "name" : "Air Zamzam 1L",
         "price" : 30000,
         "categories" : "makanan",
         "description" : "Air Zamzam suci, mendukung spiritualitas. 1 Liter"
     },
     {
-        "img" : "src/assets/products/16.jpeg",
+        "img" : "/products/16.jpeg",
         "name" : "Air Zamzam 2,5L",
         "price" : 70000,
         "categories" : "makanan",
         "description" : "Air Zamzam suci, mendukung spiritualitas. 2,5 Liter"
     },
     {
-        "img" : "src/assets/products/18.jpeg",
+        "img" : "/products/18.jpeg",
         "name" : "Air Zamzam 5L",
         "price" : 150000,
         "categories" : "makanan",
         "description" : "Air Zamzam suci, mendukung spiritualitas. 5 Liter"
     },
     {
-        "img" : "src/assets/products/19.jpeg",
+        "img" : "/products/19.jpeg",
         "name" : "Kismis",
         "price" : 40000,
         "categories" : "makanan",

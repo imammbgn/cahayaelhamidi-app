@@ -43,7 +43,7 @@ const FaqComponent = () => {
   };
 
   return (
-    <div className="mx-auto w-[1100px] mb-28">
+    <div className="mx-auto w-[200px] md:w-[1100px] mb-28">
       <Faq data={data} styles={styles} config={config} />
     </div>
   );

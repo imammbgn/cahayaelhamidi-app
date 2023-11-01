@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <a href="https://facebook.com/" className="flex items-center">
-                  <img src="../public/logo_white.svg" className="h-6 mt-2 mr-3" alt="CahayaElhamidiLogo" />
+                  <img src="/logo_white.svg" className="h-6 mt-2 mr-3" alt="CahayaElhamidiLogo" />
               </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -16,7 +16,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-medium text-white uppercase">Resources</h2>
                   <ul className="text-gray-200 font-light">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">React</a>
+                          <a href="https://react.com/" className="hover:underline">React</a>
                       </li>
                       <li>
                           <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
@@ -27,10 +27,10 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-medium text-white uppercase">Follow us</h2>
                   <ul className="text-white font-light">
                       <li className="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Instagram</a>
+                          <a href="https://github.com/" className="hover:underline ">Instagram</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Facebook</a>
+                          <a href="https://dacebook.com/" className="hover:underline">Facebook</a>
                       </li>
                   </ul>
               </div>

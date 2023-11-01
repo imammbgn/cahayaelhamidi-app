@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import {
   Navbar,
@@ -10,7 +10,22 @@ import {
 } from "@material-tailwind/react";
 
 export function NavbarDefault( {onclick} ) {
-  const [openNav, setOpenNav] = React.useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setShow(window.innerWidth >= 1024);
+    };
+
+    handleWindowResize();
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   React.useEffect(() => {
     window.addEventListener(
@@ -61,7 +76,7 @@ export function NavbarDefault( {onclick} ) {
   );
 
   return (
-    <div className="max-h-[768px]">
+    <div className="lg:max-h-[768px] w-[375px] lg:w-full">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-light-green-700">
           <Typography
@@ -73,15 +88,17 @@ export function NavbarDefault( {onclick} ) {
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <div className="flex items-center gap-8">
-          <Input
-            type="search"
-            color="light-green"
-            label="Cari Disini.."
-            className="pr-20"
-            containerProps={{
-              className: "min-w-[288px]",
-            }}
-          />
+          {show && (
+        <Input
+          type="search"
+          color="light-green"
+          label="Cari Disini.."
+          className="pr-20"
+          containerProps={{
+            className: "min-w-[288px]",
+          }}
+        />
+        )}
             <Button
               variant="outlined"
               size="sm"

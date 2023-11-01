@@ -6,21 +6,21 @@ const ImageHero = ({ url, title, paragraph, onclick }) => {
         <img
           src={url}
           alt="image 1"
-          className="h-[530px] w-full object-cover"
+          className="h-[530px] md:w-full object-cover"
         />
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
           <div className="w-3/4 text-center md:w-2/4">
             <Typography
               variant="h1"
               color="white"
-              className="mb-8 text-3xl md:text-4xl lg:text-5xl font-montserrat"
+              className="mb-8 text-2xl md:text-4xl lg:text-5xl font-montserrat"
             >
               {title}
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80 font-montserrat"
+              className="mb-12 text-md lg:text-2xl opacity-80 font-montserrat"
             >
               {paragraph}
             </Typography>
