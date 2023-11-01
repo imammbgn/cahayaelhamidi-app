@@ -8,10 +8,12 @@ import {
   IconButton,
   Input
 } from "@material-tailwind/react";
+import ModalLogin from "./Login/login"
 
 export function NavbarDefault( {onclick} ) {
   const [openNav, setOpenNav] = useState(false);
   const [show, setShow] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -27,7 +29,7 @@ export function NavbarDefault( {onclick} ) {
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
@@ -76,6 +78,7 @@ export function NavbarDefault( {onclick} ) {
   );
 
   return (
+    <>
     <div className="lg:max-h-[768px] w-[375px] lg:w-full">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-light-green-700">
@@ -104,6 +107,7 @@ export function NavbarDefault( {onclick} ) {
               size="sm"
               color="light-green"
               className="group hidden lg:inline-block hover:bg-light-green-700"
+              onClick={() => setShowModal(true)}
             >
               <span className="font-semibold font-poppins group-hover:text-white">
                 Login
@@ -162,5 +166,10 @@ export function NavbarDefault( {onclick} ) {
         </Collapse>
       </Navbar>
     </div>
+
+{showModal ? (
+    <ModalLogin onclick={() => setShowModal(false)}/>
+) : null}
+</>
   );
 }
