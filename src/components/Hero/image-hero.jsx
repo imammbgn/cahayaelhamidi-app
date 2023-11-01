@@ -1,6 +1,6 @@
 import { Typography, Button } from "@material-tailwind/react";
 
-const ImageHero = ({ url, title, paragraph }) => {
+const ImageHero = ({ url, title, paragraph, onclick }) => {
     return (
         <div className="relative h-full w-full">
         <img
@@ -25,7 +25,7 @@ const ImageHero = ({ url, title, paragraph }) => {
               {paragraph}
             </Typography>
             <div className="flex justify-center gap-2">
-              <Button className="font-poppins font-normal" size="lg" color="light-green">
+              <Button onClick={onclick} className="font-poppins font-normal" size="lg" color="light-green">
                 Explore
               </Button>
             </div>

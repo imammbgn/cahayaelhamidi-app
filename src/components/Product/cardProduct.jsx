@@ -24,7 +24,7 @@ import {
           <img
             src={product.img}
             alt="card-image"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         </CardHeader>
         <CardBody>
@@ -48,7 +48,7 @@ import {
           <Button
             ripple={false}
             fullWidth={true}
-            className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none font-poppins font-semibold hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+            className="bg-green-400 text-blue-gray-50 shadow-none font-poppins font-semibold hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
           >
             Beli
           </Button>

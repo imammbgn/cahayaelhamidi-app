@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import {
   Navbar,
   Collapse,
@@ -8,7 +9,7 @@ import {
   Input
 } from "@material-tailwind/react";
 
-export function NavbarDefault() {
+export function NavbarDefault( {onclick} ) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -25,7 +26,7 @@ export function NavbarDefault() {
         variant="small"
         className="p-1 font-medium font-poppins text-light-green-700"
       >
-        <a href="#" className="flex items-center">
+        <a onClick={onclick} className="flex items-center cursor-pointer">
           Produk
         </a>
       </Typography>
@@ -34,27 +35,27 @@ export function NavbarDefault() {
         variant="small"
         className="p-1 font-medium font-poppins text-light-green-700"
       >
-        <a href="#" className="flex items-center">
+        <Link to="about" className="flex items-center">
           Tentang Kami
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         className="p-1 font-medium font-poppins text-light-green-700"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/gallery" className="flex items-center">
           Galeri
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         className="p-1 font-medium font-poppins text-light-green-700"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/contact" className="flex items-center">
           Kontak
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
@@ -65,7 +66,7 @@ export function NavbarDefault() {
         <div className="flex items-center justify-between text-light-green-700">
           <Typography
             as="a"
-            href="#"
+            href="/"
             className="mr-4 cursor-pointer py-1.5 font-montserrat font-bold"
           >
             CahayaElhamidi
