@@ -91,7 +91,10 @@ export function NavbarDefault( {onclick} ) {
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <div className="flex items-center gap-8">
-          {show && (
+
+          {/* -- Aktifkan Fungsi Search --  */}
+
+          {/* {show && (
         <Input
           type="search"
           color="light-green"
@@ -101,8 +104,11 @@ export function NavbarDefault( {onclick} ) {
             className: "min-w-[288px]",
           }}
         />
-        )}
-            <Button
+        )} */}
+
+        {/* -- Aktifkan Fungsi Login --  */}
+        
+            {/* <Button
               variant="outlined"
               size="sm"
               color="light-green"
@@ -112,7 +118,9 @@ export function NavbarDefault( {onclick} ) {
               <span className="font-semibold font-poppins group-hover:text-white">
                 Login
               </span>
-            </Button>
+            </Button> */}
+
+
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -167,9 +175,9 @@ export function NavbarDefault( {onclick} ) {
       </Navbar>
     </div>
 
-{showModal ? (
+{/* {showModal ? (
     <ModalLogin onclick={() => setShowModal(false)}/>
-) : null}
+) : null} */}
 </>
   );
 }
